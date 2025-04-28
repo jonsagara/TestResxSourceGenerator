@@ -5,6 +5,7 @@
 		<ImplicitUsings>enable</ImplicitUsings>
 		<Nullable>enable</Nullable>
 
+		<!-- I copied these in because they are in System.Private.CorLib.csproj -->
 		<GenerateResxSourceOmitGetResourceString>true</GenerateResxSourceOmitGetResourceString>
 		<GenerateNeutralResourcesLanguageAttribute>false</GenerateNeutralResourcesLanguageAttribute>
 		<EmitCompilerGeneratedFiles>true</EmitCompilerGeneratedFiles>
