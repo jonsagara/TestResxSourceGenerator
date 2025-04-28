@@ -1,4 +1,4 @@
-# Using source generators to create the C# class to access .resx strings
+# Generating at build-time the C# class to access .resx strings
 
 The `main` branch contains my broken attempt to modify my .csproj to get it working.
 
