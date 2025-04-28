@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net9.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+
+		<GenerateResxSourceOmitGetResourceString>true</GenerateResxSourceOmitGetResourceString>
+		<GenerateNeutralResourcesLanguageAttribute>false</GenerateNeutralResourcesLanguageAttribute>
+		<EmitCompilerGeneratedFiles>true</EmitCompilerGeneratedFiles>
+	</PropertyGroup>
+
+	<!--
+	TestClass.cs does not compile: The type or namespace name 'SR' does not exist in the namespace 'TestLibrary' (are you missing an assembly reference?)
+	-->
+	<ItemGroup Label="Embedded Resources">
+		<EmbeddedResource Update="Resources\Strings.resx">
+			<GenerateSource>true</GenerateSource>
+			<ClassName>TestLibrary.SR</ClassName>
+		</EmbeddedResource>
+	</ItemGroup>
+
+</Project>
